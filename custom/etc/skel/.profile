@@ -16,8 +16,8 @@ if [ -n "$BASH_VERSION" ]; then
     fi
 fi
 
-#dconf write /org/gnome/desktop/input-sources/sources '[("xkb", "us"), ("ibus", "m17n:mr:phonetic"), ("ibus", "m17n:mr:itrans"), ("ibus", "m17n:mr:inscript"), ("xkb", "in+mar-kagapa")]'
-#dconf write /org/gnome/desktop/input-sources/current 'uint32 1'
+dconf write /org/gnome/desktop/input-sources/sources '[("xkb", "us"), ("ibus", "m17n:mr:phonetic"), ("ibus", "m17n:mr:itrans"), ("ibus", "m17n:mr:inscript"), ("xkb", "in+mar-kagapa")]'
+dconf write /org/gnome/desktop/input-sources/current 'uint32 1'
 
 
 # set PATH so it includes user's private bin if it exists
